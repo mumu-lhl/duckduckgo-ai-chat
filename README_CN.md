@@ -25,7 +25,12 @@ import { initChat } from "duckduckgo-ai-chat";
 const chat = await initChat("gpt-4o-mini");
 
 // 一次性获取完整的回复
-const message = await chat.fetchFull("Hello");
+let message = await chat.fetchFull("Hello");
+console.log(message)
+
+// 重新回复
+chat.redo()
+message = await chat.fetchFull("Hello");
 console.log(message)
 
 // 获取流式回复

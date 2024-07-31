@@ -25,7 +25,12 @@ import { initChat } from "duckduckgo-ai-chat";
 const chat = await initChat("gpt-4o-mini");
 
 // Fetch the full reply in one go
-const message = await chat.fetchFull("Hello");
+let message = await chat.fetchFull("Hello");
+console.log(message)
+
+// Redo
+chat.redo()
+message = await chat.fetchFull("Hello");
 console.log(message)
 
 // Fetch the streamed reply
