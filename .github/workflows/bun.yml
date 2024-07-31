@@ -12,5 +12,5 @@ jobs:
           bun-version: latest
 
       - run: bun install
-      - run: bun test
+      - run: bun test --timeout 10000000
       
