@@ -1,0 +1,36 @@
+{
+  "name": "duckduckgo-ai-chat",
+  "version": "1.0.0",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "Duckduckgo ai chat",
+  "license": "MIT",
+  "keywords": [
+    "duckduckgo",
+    "ai",
+    "chatbot",
+    "chat"
+  ],
+  "scripts": {
+    "build": "bun run build.ts"
+  },
+  "files": ["dist"],
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-plugin-dts": "^0.2.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "fetch-event-stream": "^0.1.5"
+  },
+  "author": "Mumulhl <mumulhl.666@gmail.com",
+  "bugs": "https://github.com/mumu-lhl/duckduckgo-ai-chat/issues",
+  "homepage": "https://github.com/mumu-lhl/duckduckgo-ai-chat#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mumu-lhl/duckduckgo-ai-chat"
+  }
+}
