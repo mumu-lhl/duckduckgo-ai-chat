@@ -7,19 +7,19 @@ duckduckgo-ai-chat 为 JavaScript/TypeScript 提供 [Duckduckgo AI Chat](https:/
 ## 安装
 
 ```sh
-npm install duckduckgo-ai-chat
+npx jsr add @mumulhl/duckduckgo-ai-chat
 # or
-pnpm install duckduckgo-ai-chat
+pnpm dlx jsr add @mumulhl/duckduckgo-ai-chat
 # or
-yarn add duckduckgo-ai-chat
+yarn dlx jsr add @mumulhl/duckduckgo-ai-chat
 # or
-bun add duckduckgo-ai-chat
+deno add @mumulhl/duckduckgo-ai-chat
 ```
 
 ## 使用示例
 
 ```javascript
-import { initChat } from "duckduckgo-ai-chat";
+import { initChat } from "@mumulhl/duckduckgo-ai-chat";
 
 // 初始化，可选模型有 gpt-4o-mini, claude-3-haiku-20240307, meta-llama/Llama-3-70b-chat-hf, mistralai/Mixtral-8x7B-Instruct-v0.1
 const chat = await initChat("gpt-4o-mini");
