@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 ---
+## [2.0.2](https://github.com/mumu-lhl/duckduckgo-ai-chat/compare/v2.0.1..v2.0.2) - 2024-08-01
+
+### Documentation
+
+- document symbols - ([9fdedae](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/9fdedae1dd6dc639bb2a1b5c882e97716b70010a)) - Mumulhl
+
+---
 ## [2.0.1](https://github.com/mumu-lhl/duckduckgo-ai-chat/compare/v2.0.0..v2.0.1) - 2024-08-01
 
 ### Documentation
@@ -12,6 +19,7 @@ All notable changes to this project will be documented in this file. See [conven
 ### Miscellaneous Chores
 
 - add publish workflow - ([f0c11d2](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/f0c11d23db5d46bc3086ca46a7ab2833068b6eb5)) - Mumulhl
+- release v2.0.1 - ([bc22a11](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/bc22a1115630906c6a7dd1b484e0fcc31c17706e)) - Mumulhl
 
 ---
 ## [2.0.0](https://github.com/mumu-lhl/duckduckgo-ai-chat/compare/v1.0.0..v2.0.0) - 2024-08-01
