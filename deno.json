@@ -1,0 +1,12 @@
+{
+  "name": "@mumulhl/duckduckgo-ai-chat",
+  "version": "2.0.0",
+  "exports": "./mod.ts"
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+  "imports": {
+    "@lukeed/fetch-event-stream": "jsr:@lukeed/fetch-event-stream@^0.1.5",
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}

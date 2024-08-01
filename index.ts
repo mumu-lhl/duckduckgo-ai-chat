@@ -1,6 +1,4 @@
-import { events } from "fetch-event-stream";
-import { PolyfillTextDecoderStream } from "./polyfill.ts";
-globalThis.TextDecoderStream ||= PolyfillTextDecoderStream;
+import { events } from "@lukeed/fetch-event-stream";
 
 const STATUS_URL = "https://duckduckgo.com/duckchat/v1/status";
 const CHAT_URL = "https://duckduckgo.com/duckchat/v1/chat";
@@ -54,11 +52,11 @@ class Chat {
     }
   }
 
-  async fetchFull(content: string) {
+  async fetchFull(content: string): Promise<string> {
     const message = await this.fetch(content);
     let text = "";
-    let stream = events(message);
-    for await (let event of stream) {
+    const stream = events(message);
+    for await (const event of stream) {
       if (event.data) {
         const messageData = JSON.parse(event.data);
         if (messageData["message"] == undefined) {
@@ -78,11 +76,11 @@ class Chat {
     return text;
   }
 
-  async *fetchStream(content: string) {
+  async *fetchStream(content: string): AsyncGenerator<string, void> {
     const message = await this.fetch(content);
-    let stream = events(message);
+    const stream = events(message);
     let text = "";
-    for await (let event of stream) {
+    for await (const event of stream) {
       if (event.data) {
         const messageData = JSON.parse(event.data);
         if (messageData["message"] == undefined) {
@@ -109,7 +107,7 @@ class Chat {
   }
 }
 
-async function initChat(model: Model) {
+async function initChat(model: Model): Promise<Chat> {
   const status = await fetch(STATUS_URL, { headers: STATUS_HEADERS });
   const vqd = status.headers.get("x-vqd-4");
   if (!vqd) {
