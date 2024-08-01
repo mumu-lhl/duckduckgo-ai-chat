@@ -5,7 +5,6 @@ async function test(name: string, fn: any) {
   console.log(name);
   await fn();
   console.log();
-  console.log();
 }
 
 await test("Init chat", async () => {

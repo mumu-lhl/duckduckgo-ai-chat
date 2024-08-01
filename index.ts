@@ -30,7 +30,13 @@ class Chat {
     this.messages = [];
   }
 
-  async fetch(content: string) {
+  /**
+   * Fetching the original message.
+   *
+   * @param content The content to send.
+   * @returns The original message.
+   */
+  async fetch(content: string): Promise<Response> {
     this.messages.push({ content, role: "user" });
     const payload: ChatPayload = {
       model: this.model,
@@ -52,6 +58,12 @@ class Chat {
     }
   }
 
+  /**
+   * Fetching the full message.
+   *
+   * @param content The content to send.
+   * @returns The full message.
+   */
   async fetchFull(content: string): Promise<string> {
     const message = await this.fetch(content);
     let text = "";
@@ -76,6 +88,12 @@ class Chat {
     return text;
   }
 
+  /**
+   * Fetching the streaming message.
+   *
+   * @param content The content to send.
+   * @returns The streaming message.
+   */
   async *fetchStream(content: string): AsyncGenerator<string, void> {
     const message = await this.fetch(content);
     const stream = events(message);
@@ -100,6 +118,9 @@ class Chat {
     this.messages.push({ content: text, role: "assistant" });
   }
 
+  /**
+   * Redo.
+   */
   redo() {
     this.newVqd = this.oldVqd;
     this.messages.pop();
@@ -107,6 +128,11 @@ class Chat {
   }
 }
 
+/** Init chat.
+ *
+ * @param model The model used by chat.
+ * @returns A Chat instance.
+ */
 async function initChat(model: Model): Promise<Chat> {
   const status = await fetch(STATUS_URL, { headers: STATUS_HEADERS });
   const vqd = status.headers.get("x-vqd-4");
