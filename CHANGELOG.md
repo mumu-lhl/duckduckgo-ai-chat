@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 ---
+## [2.0.1](https://github.com/mumu-lhl/duckduckgo-ai-chat/compare/v2.0.0..v2.0.1) - 2024-08-01
+
+### Documentation
+
+- fix example and installation - ([7fb7410](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/7fb741067e192f89f1cccccda3c91394741557d2)) - Mumulhl
+
+### Miscellaneous Chores
+
+- add publish workflow - ([f0c11d2](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/f0c11d23db5d46bc3086ca46a7ab2833068b6eb5)) - Mumulhl
+
+---
 ## [2.0.0](https://github.com/mumu-lhl/duckduckgo-ai-chat/compare/v1.0.0..v2.0.0) - 2024-08-01
 
 ### Miscellaneous Chores
@@ -10,6 +21,7 @@ All notable changes to this project will be documented in this file. See [conven
 - increase bun test timeout - ([fd644f2](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/fd644f258981bde811633531330ddb244f813cbe)) - Mumulhl
 - delete bun workflow - ([5a050ef](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/5a050effcc2afe84cf3c246cfef26e75ce1acf5e)) - Mumulhl
 - abandon bun, use deno - ([c6ba28a](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/c6ba28a2ffc7e44e084d334a188a9ebf94368884)) - Mumulhl
+- release v2.0.0 - ([ea2639f](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/ea2639fdbe39f178e8153951fd2da773904d343f)) - Mumulhl
 
 ---
 ## [1.0.0] - 2024-07-31
