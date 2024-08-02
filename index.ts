@@ -42,7 +42,6 @@ class Chat {
       model: this.model,
       messages: this.messages,
     };
-    await fetch(STATUS_URL);
     const message = await fetch(CHAT_URL, {
       headers: { "x-vqd-4": this.newVqd, "Content-Type": "application/json" },
       method: "POST",
