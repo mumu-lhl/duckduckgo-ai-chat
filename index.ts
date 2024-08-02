@@ -144,3 +144,4 @@ async function initChat(model: Model): Promise<Chat> {
 }
 
 export { initChat };
+export type { Chat, Model };
