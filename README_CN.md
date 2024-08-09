@@ -21,7 +21,7 @@ deno add @mumulhl/duckduckgo-ai-chat
 ```javascript
 import { initChat } from "@mumulhl/duckduckgo-ai-chat";
 
-// 初始化，可选模型有 gpt-4o-mini, claude-3-haiku-20240307, meta-llama/Llama-3-70b-chat-hf, mistralai/Mixtral-8x7B-Instruct-v0.1
+// 初始化，可选模型有 gpt-4o-mini, claude-3-haiku, llama, mixtral
 const chat = await initChat("gpt-4o-mini");
 
 // 一次性获取完整的回复

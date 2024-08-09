@@ -7,14 +7,27 @@ const STATUS_HEADERS = { "x-vqd-accept": "1" };
 type Model =
   | "gpt-4o-mini"
   | "claude-3-haiku-20240307"
-  | "meta-llama/Llama-3-70b-chat-hf"
+  | "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo"
   | "mistralai/Mixtral-8x7B-Instruct-v0.1";
+
+type ModelAlias =
+  | "gpt-4o-mini"
+  | "claude-3-haiku"
+  | "llama"
+  | "mixtral";
 
 type Messages = { content: string; role: "user" | "assistant" }[];
 
 type ChatPayload = {
   model: Model;
   messages: Messages;
+};
+
+const _model: { [property: string]: Model } = {
+  "gpt-4o-mini": "gpt-4o-mini",
+  "claude-3-haiku": "claude-3-haiku-20240307",
+  "llama": "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+  "mixtral": "mistralai/Mixtral-8x7B-Instruct-v0.1",
 };
 
 class Chat {
@@ -132,7 +145,7 @@ class Chat {
  * @param model The model used by chat.
  * @returns A Chat instance.
  */
-async function initChat(model: Model): Promise<Chat> {
+async function initChat(model: ModelAlias): Promise<Chat> {
   const status = await fetch(STATUS_URL, { headers: STATUS_HEADERS });
   const vqd = status.headers.get("x-vqd-4");
   if (!vqd) {
@@ -140,8 +153,8 @@ async function initChat(model: Model): Promise<Chat> {
       `${status.status}: Failed to initialize chat. ${status.statusText}`,
     );
   }
-  return new Chat(vqd, model);
+  return new Chat(vqd, _model[model]);
 }
 
 export { initChat };
-export type { Chat, Model };
+export type { Chat, ModelAlias };
