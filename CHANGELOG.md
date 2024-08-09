@@ -3,12 +3,27 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 ---
+## [3.0.0](https://github.com/mumu-lhl/duckduckgo-ai-chat/compare/v2.0.3..v3.0.0) - 2024-08-09
+
+### Documentation
+
+- fix typo - ([85a0c84](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/85a0c844f4fd0c959cb061ab09ddc50bb0b56ac6)) - Mumulhl
+
+### Features
+
+-  [**breaking**]add model alias - ([0c6acc9](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/0c6acc9f11bbe8c5da001879c80769a5f2e703be)) - Mumulhl
+
+---
 ## [2.0.3](https://github.com/mumu-lhl/duckduckgo-ai-chat/compare/v2.0.2..v2.0.3) - 2024-08-02
 
 ### Bug Fixes
 
 - delete useless fetch - ([d85b9da](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/d85b9da5b8761a42ea8290dafaab5482f9905e3f)) - Mumulhl
 - export type Chat and Model - ([04989b0](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/04989b02802f50175053f85ea1cb2f95c58d7e4d)) - Mumulhl
+
+### Miscellaneous Chores
+
+- release v2.0.3 - ([788e219](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/788e219f2c23433ceafdc6affae0a473bd011ba5)) - Mumulhl
 
 ---
 ## [2.0.2](https://github.com/mumu-lhl/duckduckgo-ai-chat/compare/v2.0.1..v2.0.2) - 2024-08-01
