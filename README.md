@@ -41,3 +41,9 @@ for await (let data of stream) {
   console.log(data)
 }
 ```
+
+## Star History
+
+Poor star count...
+
+[![Star History Chart](https://api.star-history.com/svg?repos=mumu-lhl/duckduckgo-ai-chat&type=Date)](https://star-history.com/#mumu-lhl/duckduckgo-ai-chat&Date)
