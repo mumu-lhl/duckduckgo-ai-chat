@@ -1,5 +1,7 @@
 # duckduckgo-ai-chat
 
+![JSR Version](https://img.shields.io/jsr/v/%40mumulhl/duckduckgo-ai-chat)
+
 English | [中文](./README_CN.md)
 
 duckduckgo-ai-chat provides the [Duckduckgo AI Chat](https://duckduckgo.com/aichat) API for JavaScript/TypeScript, which can use gpt-4o-mini for free.

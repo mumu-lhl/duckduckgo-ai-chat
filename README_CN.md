@@ -1,5 +1,7 @@
 # duckduckgo-ai-chat
 
+![JSR Version](https://img.shields.io/jsr/v/%40mumulhl/duckduckgo-ai-chat)
+
 [English](./README.md) | 中文
 
 duckduckgo-ai-chat 为 JavaScript/TypeScript 提供 [Duckduckgo AI Chat](https://duckduckgo.com/aichat) API，可以免费使用 gpt-4o-mini。
