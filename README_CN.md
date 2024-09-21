@@ -15,7 +15,7 @@ pnpm dlx jsr add @mumulhl/duckduckgo-ai-chat
 # or
 yarn dlx jsr add @mumulhl/duckduckgo-ai-chat
 # or
-deno add @mumulhl/duckduckgo-ai-chat
+deno add jsr:@mumulhl/duckduckgo-ai-chat
 ```
 
 ## 使用示例
