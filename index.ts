@@ -81,7 +81,7 @@ class Chat {
     let text = "";
     const stream = events(message);
     for await (const event of stream) {
-      if (event.data) {
+      if (event.data && event.data != "[DONE]") {
         const messageData = JSON.parse(event.data);
         if (messageData["message"] == undefined) {
           break;
