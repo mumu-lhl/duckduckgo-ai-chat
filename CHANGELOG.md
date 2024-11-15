@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 ---
+## [3.0.1](https://github.com/mumu-lhl/duckduckgo-ai-chat/compare/v3.0.0..v3.0.1) - 2024-11-15
+
+### Bug Fixes
+
+- error caused by '[DONE]' flag in response - ([742a190](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/742a1908b2973bf86f726597ebca4916d8410c47)) - Phantasia
+
+### Documentation
+
+- **(readme)** fix deno install - ([456598a](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/456598ab61298a1346a75c17320543ce321c7371)) - Mumulhl
+- add badge - ([46d1998](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/46d199838f6f52a5d307e112f94cfee0a1c0139a)) - Mumulhl
+- add star history - ([b65630a](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/b65630a3f927298b9e8b702654b739ed7b0915ce)) - Mumulhl
+
+### Miscellaneous Chores
+
+- add deno check workflow - ([1b4a975](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/1b4a97520a25c24e6c1b84a993bd984ae2a3295f)) - Mumulhl
+- add limit to deno workflow - ([c3d4856](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/c3d4856eea58b4243fef0b2dea42d0db82676fcb)) - Mumulhl
+- change publish workflow trigger to tags - ([25cef6d](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/25cef6d1d7fdd2c85940fd0c740ac943faa74d67)) - Mumulhl
+
+---
 ## [3.0.0](https://github.com/mumu-lhl/duckduckgo-ai-chat/compare/v2.0.3..v3.0.0) - 2024-08-09
 
 ### Documentation
@@ -12,6 +31,10 @@ All notable changes to this project will be documented in this file. See [conven
 ### Features
 
 -  [**breaking**]add model alias - ([0c6acc9](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/0c6acc9f11bbe8c5da001879c80769a5f2e703be)) - Mumulhl
+
+### Miscellaneous Chores
+
+- release v3.0.0 - ([fa96237](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/fa9623769f2478c4d598d493558c0334dc438541)) - Mumulhl
 
 ---
 ## [2.0.3](https://github.com/mumu-lhl/duckduckgo-ai-chat/compare/v2.0.2..v2.0.3) - 2024-08-02
