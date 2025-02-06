@@ -3,21 +3,21 @@
   "version": "3.0.1",
   "exports": "./mod.ts",
   "tasks": {
-    "test": "deno run -A test.ts",
+    "test": "deno run -A test.ts"
   },
   "imports": {
     "@lukeed/fetch-event-stream": "jsr:@lukeed/fetch-event-stream@^0.1.5",
-    "@std/assert": "jsr:@std/assert@1",
+    "@std/assert": "jsr:@std/assert@^1.0.11"
   },
   "publish": {
     "include": [
       "LICENSE",
       "README.md",
       "README_CN.md",
-      "*.ts",
+      "*.ts"
     ],
     "exclude": [
-      "test.ts",
-    ],
+      "test.ts"
+    ]
   }
 }
