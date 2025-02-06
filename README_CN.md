@@ -4,7 +4,7 @@
 
 [English](./README.md) | 中文
 
-duckduckgo-ai-chat 为 JavaScript/TypeScript 提供 [Duckduckgo AI Chat](https://duckduckgo.com/aichat) API，可以免费使用 gpt-4o-mini。
+duckduckgo-ai-chat 为 JavaScript/TypeScript 提供 [Duckduckgo AI Chat](https://duckduckgo.com/aichat) API，可以免费使用 o3-mini。
 
 ## 安装
 
@@ -23,8 +23,8 @@ deno add jsr:@mumulhl/duckduckgo-ai-chat
 ```javascript
 import { initChat } from "@mumulhl/duckduckgo-ai-chat";
 
-// 初始化，可选模型有 gpt-4o-mini, claude-3-haiku, llama, mixtral
-const chat = await initChat("gpt-4o-mini");
+// 初始化，可选模型有 gpt-4o-mini, claude-3-haiku, llama, mixtral, o3-mini
+const chat = await initChat("o3-mini");
 
 // 一次性获取完整的回复
 let message = await chat.fetchFull("Hello");

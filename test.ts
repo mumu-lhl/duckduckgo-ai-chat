@@ -8,19 +8,19 @@ async function test(name: string, fn: any) {
 }
 
 await test("Init chat", async () => {
-  await initChat("gpt-4o-mini");
+  await initChat("o3-mini");
 });
 
 await test("fetchFull", async () => {
-  const chat = await initChat("gpt-4o-mini");
-  const message = await chat.fetchFull("Hello");
+  const chat = await initChat("o3-mini");
+  const message = await chat.fetchFull("Who are you?");
   console.log(message);
 });
 
 await test("fetchStream", async () => {
-  const chat = await initChat("gpt-4o-mini");
-  const stream = chat.fetchStream("Hello");
-  let text = "Hello";
+  const chat = await initChat("o3-mini");
+  const stream = chat.fetchStream("Who are you?");
+  let text = "";
   for await (const data of stream) {
     text += data;
   }
@@ -28,7 +28,7 @@ await test("fetchStream", async () => {
 });
 
 await test("redo", async () => {
-  const chat = await initChat("gpt-4o-mini");
+  const chat = await initChat("o3-mini");
   await chat.fetchFull("Hello");
 
   let message = await chat.fetchFull(
@@ -42,7 +42,7 @@ await test("redo", async () => {
 });
 
 await test("Chat", async () => {
-  const chat = await initChat("gpt-4o-mini");
+  const chat = await initChat("o3-mini");
 
   let message = await chat.fetchFull("Hello");
   console.log(message);

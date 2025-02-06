@@ -8,13 +8,15 @@ type Model =
   | "gpt-4o-mini"
   | "claude-3-haiku-20240307"
   | "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo"
-  | "mistralai/Mixtral-8x7B-Instruct-v0.1";
+  | "mistralai/Mixtral-8x7B-Instruct-v0.1"
+  | "o3-mini";
 
 type ModelAlias =
   | "gpt-4o-mini"
   | "claude-3-haiku"
   | "llama"
-  | "mixtral";
+  | "mixtral"
+  | "o3-mini";
 
 type Messages = { content: string; role: "user" | "assistant" }[];
 
@@ -28,6 +30,7 @@ const _model: { [property: string]: Model } = {
   "claude-3-haiku": "claude-3-haiku-20240307",
   "llama": "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
   "mixtral": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "o3-mini": "o3-mini",
 };
 
 class Chat {
