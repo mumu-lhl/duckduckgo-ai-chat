@@ -1,6 +1,6 @@
 {
   "name": "@mumulhl/duckduckgo-ai-chat",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "exports": "./mod.ts",
   "tasks": {
     "test": "deno run -A test.ts"

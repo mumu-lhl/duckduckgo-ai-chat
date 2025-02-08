@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 ---
+## [3.2.0](https://github.com/mumu-lhl/duckduckgo-ai-chat/compare/v3.1.0..v3.2.0) - 2025-02-08
+
+### Documentation
+
+- update documentation - ([fb2d492](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/fb2d492a5f2ed52119d959949ecb9cad0d69fe04)) - Mumulhl
+
+### Features
+
+- update llama to llama 3.3 - ([98dcd85](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/98dcd858d32dff67155b5ddbdfda2484650c2370)) - Mumulhl
+
+---
+## [3.1.0](https://github.com/mumu-lhl/duckduckgo-ai-chat/compare/v3.0.1..v3.1.0) - 2025-02-06
+
+### Features
+
+- add o3-mini - ([b8c1e7c](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/b8c1e7cd689a6fae2cf5b50c3a80f9f974da7aba)) - Mumulhl
+
+### Miscellaneous Chores
+
+- **(ci)** update Deno setup action to version 2 - ([380539a](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/380539ae2ceb04fa7f8449d21eecdb980855c94b)) - Mumulhl
+- **(deps)** update dependencies and lock file version - ([a784d93](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/a784d936c3e58ca5cf6dbfd31b839871623c29ba)) - Mumulhl
+
+---
 ## [3.0.1](https://github.com/mumu-lhl/duckduckgo-ai-chat/compare/v3.0.0..v3.0.1) - 2024-11-15
 
 ### Bug Fixes
