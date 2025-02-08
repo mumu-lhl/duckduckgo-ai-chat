@@ -7,7 +7,7 @@ const STATUS_HEADERS = { "x-vqd-accept": "1" };
 type Model =
   | "gpt-4o-mini"
   | "claude-3-haiku-20240307"
-  | "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo"
+  | "meta-llama/Llama-3.3-70B-Instruct-Turbo"
   | "mistralai/Mixtral-8x7B-Instruct-v0.1"
   | "o3-mini";
 
@@ -28,7 +28,7 @@ type ChatPayload = {
 const _model: { [property: string]: Model } = {
   "gpt-4o-mini": "gpt-4o-mini",
   "claude-3-haiku": "claude-3-haiku-20240307",
-  "llama": "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+  "llama": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
   "mixtral": "mistralai/Mixtral-8x7B-Instruct-v0.1",
   "o3-mini": "o3-mini",
 };
