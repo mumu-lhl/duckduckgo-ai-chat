@@ -8,7 +8,7 @@ type Model =
   | "gpt-4o-mini"
   | "claude-3-haiku-20240307"
   | "meta-llama/Llama-3.3-70B-Instruct-Turbo"
-  | "mistralai/Mixtral-8x7B-Instruct-v0.1"
+  | "mistralai/Mistral-Small-24B-Instruct-2501"
   | "o3-mini";
 
 type ModelAlias =
@@ -29,7 +29,7 @@ const _model: { [property: string]: Model } = {
   "gpt-4o-mini": "gpt-4o-mini",
   "claude-3-haiku": "claude-3-haiku-20240307",
   "llama": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
-  "mixtral": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "mixtral": "mistralai/Mistral-Small-24B-Instruct-2501",
   "o3-mini": "o3-mini",
 };
 
