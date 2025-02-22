@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 ---
+## [3.3.0](https://github.com/mumu-lhl/duckduckgo-ai-chat/compare/v3.2.0..v3.3.0) - 2025-02-22
+
+### Features
+
+- update Mixtral model reference to Mistral-Small-24B-Instruct-2501 - ([e3a71a9](https://github.com/mumu-lhl/duckduckgo-ai-chat/commit/e3a71a9f12987961971caaad2a19047502083947)) - Mumulhl
+
+---
 ## [3.2.0](https://github.com/mumu-lhl/duckduckgo-ai-chat/compare/v3.1.0..v3.2.0) - 2025-02-08
 
 ### Documentation
