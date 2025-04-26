@@ -6,6 +6,10 @@ English | [中文](./README_CN.md)
 
 duckduckgo-ai-chat provides the [Duckduckgo AI Chat](https://duckduckgo.com/aichat) API for JavaScript/TypeScript, which can use o3-mini for free.
 
+## Notice
+
+**Duckduckgo has made cracking much harder, and I am unable to maintain this project.**
+
 ## Install
 
 ```sh
